@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Paws - Find Your New Puppy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Happy Paws Puppy Adoption &amp; Sales</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#available-pups">Available Puppies</a></li>
+        <li><a href="#adoption-process">Adoption Process</a></li>
+        <li><a href="#contact">Inquire About a Puppy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="available-pups">
+      <h2>Available Puppies</h2>
+      <p>All puppies come with health records, initial vaccinations, and a starter care kit.</p>
+
+      <article>
+        <h3>Golden Retriever Puppy</h3>
+        <!-- Replace src with your actual puppy image filename later -->
+        <img src="golden-puppy.jpg" alt="8-week-old Golden Retriever puppy sitting on green grass">
+        <p>Age: 8 weeks | Temperament: Friendly and playful</p>
+        <a href="#contact">Ask about adopting this Golden Retriever</a>
+      </article>
+    </section>
+
+    <section id="adoption-process">
+      <h2>How Our Process Works</h2>
+      <ol>
+        <li>Browse our available puppies and review breed care guides.</li>
+        <li>Submit an adoption inquiry form below.</li>
+        <li>Schedule a meet-and-greet before bringing your puppy home.</li>
+      </ol>
+    </section>
+
+    <section id="contact">
+      <h2>Inquire About a Puppy</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="full-name">Your Full Name:</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="breed-choice">Preferred Breed:</label>
+          <select id="breed-choice" name="breed-choice">
+            <option value="golden-retriever">Golden Retriever</option>
+            <option value="french-bulldog">French Bulldog</option>
+            <option value="beagle">Beagle</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit Puppy Inquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Happy Paws. Committed to ethical and responsible puppy placement.</p>
+  </footer>
+
+</body>
+</html>
