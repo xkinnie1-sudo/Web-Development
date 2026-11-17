@@ -3,47 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Paws - Find Your New Puppy</title>
+  <title>Paws &amp; Pals - Find Your Furry New Addition Today</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>Happy Paws Puppy Adoption &amp; Sales</h1>
-    <nav aria-label="Main Navigation">
-      <ul>
-        <li><a href="#available-pups">Available Puppies</a></li>
-        <li><a href="#adoption-process">Adoption Process</a></li>
-        <li><a href="#contact">Inquire About a Puppy</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="brand">Paws &amp; Pals</a>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#featured-pups">Featured Pups</a></li>
+          <li><a href="#adoption-process">Process</a></li>
+          <li><a href="#contact">Inquire</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="available-pups">
-      <h2>Available Puppies</h2>
-      <p>All puppies come with health records, initial vaccinations, and a starter care kit.</p>
-
-      <article>
-        <h3>Golden Retriever Puppy</h3>
-        <!-- Replace src with your actual puppy image filename later -->
-        <img src="golden-puppy.jpg" alt="8-week-old Golden Retriever puppy sitting on green grass">
-        <p>Age: 8 weeks | Temperament: Friendly and playful</p>
-        <a href="#contact">Ask about adopting this Golden Retriever</a>
-      </article>
+    <!-- Hero Banner matching your wireframe -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 id="hero-heading">Find Your Furry New Addition to the Family Today!</h1>
+        <p>Healthy, socialized puppies raised with care and ready for their forever homes.</p>
+        <a href="#featured-pups" class="btn-primary">Browse Featured Pups</a>
+      </div>
     </section>
 
-    <section id="adoption-process">
-      <h2>How Our Process Works</h2>
-      <ol>
-        <li>Browse our available puppies and review breed care guides.</li>
-        <li>Submit an adoption inquiry form below.</li>
-        <li>Schedule a meet-and-greet before bringing your puppy home.</li>
-      </ol>
+    <!-- 3-Card Featured Pups Grid matching your wireframe -->
+    <section id="featured-pups" class="featured-section">
+      <h2>Featured Pups</h2>
+      <div class="pup-grid">
+
+        <article class="pup-card">
+          <h3>Pup 1: Golden Retriever</h3>
+          <div class="photo-placeholder" role="img" aria-label="Photo of an 8-week-old Golden Retriever puppy">
+            Photo
+          </div>
+          <p>8 weeks old &bull; Friendly &amp; playful</p>
+          <a href="#contact" class="btn-details">View Details</a>
+        </article>
+
+        <article class="pup-card">
+          <h3>Pup 2: French Bulldog</h3>
+          <div class="photo-placeholder" role="img" aria-label="Photo of a 9-week-old French Bulldog puppy">
+            Photo
+          </div>
+          <p>9 weeks old &bull; Affectionate &amp; calm</p>
+          <a href="#contact" class="btn-details">View Details</a>
+        </article>
+
+        <article class="pup-card">
+          <h3>Pup 3: Beagle</h3>
+          <div class="photo-placeholder" role="img" aria-label="Photo of an 8-week-old Beagle puppy">
+            Photo
+          </div>
+          <p>8 weeks old &bull; Curious &amp; gentle</p>
+          <a href="#contact" class="btn-details">View Details</a>
+        </article>
+
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Inquire About a Puppy</h2>
+    <!-- Accessible Adoption Inquiry Form -->
+    <section id="contact" class="contact-section">
+      <h2>Inquire About a Pup</h2>
       <form action="#" method="post">
         <div>
           <label for="full-name">Your Full Name:</label>
@@ -56,21 +81,21 @@
         </div>
 
         <div>
-          <label for="breed-choice">Preferred Breed:</label>
+          <label for="breed-choice">Preferred Pup:</label>
           <select id="breed-choice" name="breed-choice">
-            <option value="golden-retriever">Golden Retriever</option>
-            <option value="french-bulldog">French Bulldog</option>
-            <option value="beagle">Beagle</option>
+            <option value="golden-retriever">Pup 1 - Golden Retriever</option>
+            <option value="french-bulldog">Pup 2 - French Bulldog</option>
+            <option value="beagle">Pup 3 - Beagle</option>
           </select>
         </div>
 
-        <button type="submit">Submit Puppy Inquiry</button>
+        <button type="submit" class="btn-primary">Submit Inquiry</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Happy Paws. Committed to ethical and responsible puppy placement.</p>
+    <p>&copy; 2026 Paws &amp; Pals. Committed to ethical and responsible puppy placement.</p>
   </footer>
 
 </body>
